@@ -1,0 +1,15 @@
+REPOSITORY                TAG             IMAGE ID       CREATED         SIZE
+bogadukhovd/otus-reddit   1.0             edaba0e05960   6 days ago      664MB
+vault                     latest          184847a85628   4 months ago    221MB
+ealen/echo-server         latest          4e9ea600f74b   9 months ago    113MB
+<none>                    <none>          fea6be663648   10 months ago   14.8MB
+<none>                    <none>          6301cacc1bbf   10 months ago   1.07GB
+<none>                    <none>          b7d82055624b   10 months ago   1.07GB
+<none>                    <none>          319b37afaebc   10 months ago   1.03GB
+<none>                    <none>          7df8f24d81f3   10 months ago   1.03GB
+<none>                    <none>          6e00147b8b26   10 months ago   1.03GB
+golang                    1.18.1-buster   7f157abc6579   10 months ago   907MB
+alpine                    3.15.4          0ac33e5f5afa   11 months ago   5.57MB
+postgres                  14.2            5cd1494671e9   11 months ago   376MB
+hello-world               latest          feb5d9fea6a5   17 months ago   13.3kB
+hashicorp/http-echo       latest          a6838e9a6ff6   5 years ago     3.97MB
