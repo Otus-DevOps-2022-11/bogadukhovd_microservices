@@ -1,16 +1,16 @@
-FROM ubuntu:16.04
-RUN apt-get update
-RUN apt-get install -y ruby-full ruby-dev build-essential
-RUN gem install bundler -v 2.3.26 --no-ri --no-rdoc
+FROM ruby:2.3
+RUN apt-get update -qq \
+  && apt-get install --no-install-recommends -y --force-yes build-essential \
+  && rm -rf /var/lib/apt/lists/*
 
 ENV APP_HOME /app
 RUN mkdir $APP_HOME
-
 WORKDIR $APP_HOME
-ADD Gemfile* $APP_HOME/
-RUN bundle install
-ADD . $APP_HOME
+COPY Gemfile* $APP_HOME/
 
+RUN bundle install
+
+COPY . $APP_HOME
 ENV POST_SERVICE_HOST post
 ENV POST_SERVICE_PORT 5000
 ENV COMMENT_SERVICE_HOST comment
